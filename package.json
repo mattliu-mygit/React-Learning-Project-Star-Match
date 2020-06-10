@@ -1,5 +1,5 @@
 {
-  "name": "star-match",
+  "name": "my-awesome-react-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,10 +10,10 @@
     "build:react": "cross-env NODE_ENV=production webpack --progress -p",
     "build:node": "babel src -d build --config-file ./babel-node.config.js --copy-files",
     "build:all": "npm install && npm run build:react && npm run build:node",
-    "prod:start": "cross-env NODE_ENV=production NODE_PATH=./build pm2 start -i max build/server/server.js --update-env --name star-matchProd",
-    "prod:stop": "pm2 stop star-matchProd",
-    "prod:reload": "pm2 reload --update-env star-matchProd",
-    "prod:logs": "pm2 logs --update-env star-matchProd",
+    "prod:start": "cross-env NODE_ENV=production NODE_PATH=./build pm2 start -i max build/server/server.js --update-env --name my-awesome-react-appProd",
+    "prod:stop": "pm2 stop my-awesome-react-appProd",
+    "prod:reload": "pm2 reload --update-env my-awesome-react-appProd",
+    "prod:logs": "pm2 logs --update-env my-awesome-react-appProd",
     "test": "jest",
     "verify-tests": "jest --coverage"
   },
